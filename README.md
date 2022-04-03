@@ -33,7 +33,7 @@ API Resources to be exposed -
 ```git clone https://github.com/iampjeetsingh/s3-crud-python```
 
 - Go to the directory \
-```s3-crud-python```
+```cd s3-crud-python```
 
 - Install docker
 
@@ -50,4 +50,21 @@ API Resources to be exposed -
 \
 Refer this [blog](https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate-7b0cbc9cd608) for more info
 - Upload your docker image to ECR\
-```docker push 828253152264.dkr.ecr.us-east-1.amazonaws.com/myapp```
+```docker push 828253152264.dkr.ecr.us-east-1.amazonaws.com/myapp```\
+
+To test locally
+- Clone the repo \
+  ```git clone https://github.com/iampjeetsingh/s3-crud-python```
+
+- Go to the directory \
+  ```cd s3-crud-python```
+
+- Install python3-pip if not already installed and run to install all dependencies\
+```pip3 install boto3 botocore Flask PyJWT python-dotenv```
+- Create .env file\
+```cp .env-template .env```
+- Now add the values of environment variables with any text editor and save
+- Start flask app with following command\
+```python3 main.py```
+- Import the postman collection from postman_collection.json 
+- Test the APIs in Postman.
