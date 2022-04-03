@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "41bcf62c-a15f-4dfc-ae64-78af9dccda8c",
+		"name": "Techwondoe Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getFile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTIzNDUifQ.VhwOJFjhCBy-N8J_lKSrm2C1-k_4Pn76Jy6RzYN_ESg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/files/:fileId",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"files",
+						":fileId"
+					],
+					"variable": [
+						{
+							"key": "fileId",
+							"value": "e81bc61c-b372-11ec-bcc0-557f9338e348"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createFile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTIzNDUifQ.VhwOJFjhCBy-N8J_lKSrm2C1-k_4Pn76Jy6RzYN_ESg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Paramjeet\",\n    \"email\": \"paramjeet@techwondoe.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/files/",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"files",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTestToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/test-user",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"test-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateFile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTIzNDUifQ.VhwOJFjhCBy-N8J_lKSrm2C1-k_4Pn76Jy6RzYN_ESg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Paramjeet Singh\",\n    \"email\": \"paramjeet@techwondoe.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/files/:fileId",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"files",
+						":fileId"
+					],
+					"variable": [
+						{
+							"key": "fileId",
+							"value": "e81bc61c-b372-11ec-bcc0-557f9338e348"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTIzNDUifQ.VhwOJFjhCBy-N8J_lKSrm2C1-k_4Pn76Jy6RzYN_ESg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/files/:fileId",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"files",
+						":fileId"
+					],
+					"variable": [
+						{
+							"key": "fileId",
+							"value": "e81bc61c-b372-11ec-bcc0-557f9338e348"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://127.0.0.1:5000",
+			"type": "default"
+		}
+	]
+}
