@@ -52,7 +52,7 @@ Refer this [blog](https://towardsdatascience.com/deploying-a-docker-container-wi
 - Upload your docker image to ECR\
 ```docker push 828253152264.dkr.ecr.us-east-1.amazonaws.com/myapp```\
 
-To test locally
+## To test locally
 - Clone the repo \
   ```git clone https://github.com/iampjeetsingh/s3-crud-python```
 
